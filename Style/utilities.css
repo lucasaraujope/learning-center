@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.justfy-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.grid{
+    display: grid;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-1\.25{
+    gap: 1.25rem;
+}
+
+.gap-1\.5{
+    gap: 1.5rem;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+

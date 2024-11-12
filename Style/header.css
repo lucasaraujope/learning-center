@@ -1,0 +1,19 @@
+header{
+
+    margin-top: 3rem;
+
+    & .btn{
+        align-self: center;
+
+        display: inline-block;
+
+        padding:0.25rem 0.75rem;
+
+        border-radius: 2rem;
+        border: none;
+
+        font-size: var(--fs-lg);
+        
+        background-color: var(--bg-texts);
+    }
+}

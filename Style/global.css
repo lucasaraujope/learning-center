@@ -50,4 +50,11 @@ html {
 body{
     background-color: var(--bg-color);
     overflow-x: hidden;
+
+    width: 90rem;
+}
+
+.container{
+    width: 80rem;
+    margin: 0 auto;
 }
