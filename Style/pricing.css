@@ -1,0 +1,22 @@
+.pricing{
+    text-align: center;
+
+    flex-direction: column;
+
+    gap: 5.4375rem;
+
+    & h3 {
+        font-size: var(--fs-big-texts);
+        font-weight: var(--fw-reg);
+
+        & span {
+            color: var(--bg-texts);
+        }
+    }
+
+    & img {
+        width: 27.0625rem;
+
+        margin: 0 auto;
+    }
+}
