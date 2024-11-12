@@ -1,6 +1,10 @@
 header{
 
-    margin-top: 3rem;
+    & img{
+        display: inline-block;
+        width: 15rem;
+        height: 9.125rem;
+    }
 
     & .btn{
         align-self: center;
@@ -12,7 +16,7 @@ header{
         border-radius: 2rem;
         border: none;
 
-        font-size: var(--fs-lg);
+        font-size: var( --fs-md);
         
         background-color: var(--bg-texts);
     }
