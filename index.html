@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Fredoka:wdth,wght@75..125,300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="Style/index.css" />
 
     <title>Lerning Center</title>
@@ -50,6 +54,50 @@
 
         <p>Com acompanhamento de professor AO VIVO</p>
       </section>
+
+      <section class="feedback">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-coverflow"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <section class="about flex">
+        <img src="Assets/about-image.png" alt="">
+        <div class="about-info gap-1">
+          <h2>Quem é Nagibe Rosti?</h2>
+          <p>Sou professor de inglês há mais de 20 anos, morei nos EUA por um tempo (e foi quando descobri que não sabia nada), depois dessa experiência resolvi aprender mais e passei por diversas escolas de idioma como professor, coordenador, diretor pedagógico e sentia que faltava algo, a maior parte dos alunos não conseguia atingir a fluência como era esperado.</p>
+          <p>Passei a estudar mais sobre o cérebro e como nós aprendemos. Depois de muito estudo, desenvolvi o meu método, cerca de 20 anos atrás, abri minha escola e foi onde realmente coloquei esse método a prova e pude refiná-lo ainda mais.</p>
+          <p>Hoje eu estou aqui, pronto para entregar o ouro que venho refinando durante anos da minha carreira, mas preciso que você esteja pronto, pois isso pode mudar as oportunidades que vão chegar até você daqui para frente. </p>
+        </div>
+      </section>
+      
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+             const swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 30,
+          slideShadows: false,
+        },
+      });
+    </script>
   </body>
 </html>
