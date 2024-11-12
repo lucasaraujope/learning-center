@@ -5,6 +5,8 @@
 
     gap: 5.4375rem;
 
+    margin-bottom: 10rem;
+
     & h3 {
         font-size: var(--fs-big-texts);
         font-weight: var(--fw-reg);
