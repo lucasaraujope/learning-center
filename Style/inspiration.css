@@ -1,0 +1,9 @@
+.inpiration{
+    margin: 7rem auto;
+    font-size: var(--fs);
+    text-align: center;
+
+    span{
+        color: var(--especial-texts) ;  
+    }
+}
