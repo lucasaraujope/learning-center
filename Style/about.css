@@ -1,28 +1,26 @@
 .about {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 
-  gap: 4.3125rem;
-    align-items: center;
+  & img {
+    background: linear-gradient(180deg, rgba(22, 7, 39, 0) 0%, #160727 100%);
+    border-radius: 2rem;
+  }
+}
 
-    & img {
-        background: linear-gradient(180deg, rgba(22, 7, 39, 0) 0%, #160727 100%);
-    }
+& .about-info {
+  width: 39.6875rem;
 
-  & .about-info {
-    width: 39.6875rem;
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
+  text-align: center;
 
-    text-align: center;
+  & h2 {
+    font-size: var(--fs-big-texts);
+    font-weight: var(--fw-reg);
+  }
 
-    & h2 {
-      font-size: var(--fs-big-texts);
-      font-weight: var(--fw-reg);
-    }
-
-    & p {
-      font-size: var(--fs-lg);
-    }
+  & p {
+    font-size: var(--fs-lg);
   }
 }

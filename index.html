@@ -37,14 +37,14 @@
         <div class="layer-video">
           <div></div>
         </div>
-        <button>QUERO SER FLUENTE</button>
+        <button><a href="">QUERO SER FLUENTE</a></button>
       </section>
 
       <section class="social-proof flex">
         <h2>ALUNOS FLUENTES & <span>TRANSFORMADOS</span></h2>
 
         <div class="grid align-items">
-          <span>20.000</span>
+          <span class="alunos__number" data-val="20000">000</span>
           <p>
             Junte-se a milhares de alunos que já transformaram sua forma de
             falar inglês! Tenha aulas online flexíveis, adaptadas à sua rotina,
@@ -55,32 +55,85 @@
         <p>Com acompanhamento de professor AO VIVO</p>
       </section>
 
-      <section class="feedback">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
-            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
-            <div class="swiper-slide"><img src="Assets/Logo.svg" alt="" /></div>
-            ...
+      <section class="feedback flex gap-2">
+        <div class="card">
+          <div class="flex align-items gap-0.5">
+            <span class="image"></span>
+            <div class="name">
+              <p>Luciana Rodrigues</p>
+              <span>⭐⭐⭐⭐⭐</span>
+              <p>5 anos atrás</p>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-coverflow"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <div class="person-feedback grid gap-1">
+            <p>
+              Experiência super positiva ter aulas com o professor Nagibe Rosti,
+              ele é um professor excelente. Super dedicado a ensinar da melhor
+              forma, altamente qualificado, tem muita calma com quem está
+              iniciando e os resultados são supreendentes
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex align-items gap-0.5">
+            <span class="image"></span>
+            <div class="name">
+              <p>Ellen Costa Nunes</p>
+              <span>⭐⭐⭐⭐⭐</span>
+              <p>5 anos atrás</p>
+            </div>
+          </div>
+          <div class="person-feedback grid gap-1">
+            <p>
+              Já tive aulas com o teacher Nagibe em sala de aula e super amei.
+              Por motivos de tempo tive qye parar e agora retornei as aulas
+              particulares em skype e a experiência foi muito boa. muito top!!!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex align-items gap-0.5">
+            <span class="image"></span>
+            <div class="name">
+              <p>Patricia Almeida</p>
+              <span>⭐⭐⭐⭐⭐</span>
+              <p>4 anos atrás</p>
+            </div>
+          </div>
+          <div class="person-feedback grid gap-1">
+            <p>
+              Métodologia excelente, curso objetivo. Prática desde a primeira
+              aula e tudo muito didático. Fui aluna há 10 abis e tydi qye
+              aorebdu bis 4 neses de curso foi fundamental para minha
+              experiência fora do Brasil. Retornei agora com as aulas para
+              adquirir fluência e suuuper recomendo! Prof excelente!!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex align-items gap-0.5">
+            <span class="image"></span>
+            <div class="name">
+              <p>Thalia Cristina</p>
+              <span>⭐⭐⭐⭐⭐</span>
+              <p>4 anos atrás</p>
+            </div>
+          </div>
+          <div class="person-feedback grid gap-1">
+            <p>
+              O curso é incrível, eu comecei a estudar com 11 abis há 10 abis
+              atrás, e hoje, graças ao curso e ao professor, que possui uma
+              metodologia excelente, eu sou fluente na língua, tenho um
+              certificado TOIEC e já fiz um intercâmbio onde o inglês foi
+              exatamente importante para mim. Muito mais que recomendado!
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="about flex">
+      <section class="about flex align-items">
         <img
-          src="Assets/about-image.png"
+          src="Assets/Imagem about.png"
           alt="Imagem do professor Nagibe Rosti"
         />
         <div class="about-info gap-1">
@@ -117,21 +170,22 @@
 
       <section class="inpiration">
         <p>
-          ‘ Isso não é uma fórmula mágica que você vai comprar e sair falando
+          Isso não é uma fórmula mágica que você vai comprar e sair falando
           inglês fluentemente no dia seguinte como outros gurus diriam, mas vou
           te entregar um <span>MÉTODO</span> simples e eficaz que você poderá
           aplicar no seu dia a dia e <span>DESTRAVAR</span> de vez a sua
-          fluência. ’
+          fluência.
         </p>
       </section>
 
-      <section class="levels">
+      <section class="videos">
         <h2>
           Selecione um dos níveis abaixo e conheça algumas de nossas aulas:
         </h2>
-        <div class="btn-videos">
-          <a href="">Inglês Básico</a>
-          <a href="">Inglês Intermediário</a>
+        
+        <div class="videos__botoes">
+          <button onclick="changeVideo('https://www.youtube.com/embed/lP3W1Ltg0NE')">Inglês Básico</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/kgC6D2k0Lyg')">Inglês Intermediário</button>
         </div>
         <div class="layer-video">
           <div></div>
@@ -150,7 +204,7 @@
       <section class="faq">
         <details>
           <div class="faq-title">
-            <img src="Assets/next 1.svg" alt="">
+            <img src="Assets/next 1.svg" alt="" />
             <summary>Qual o formato do curso?</summary>
           </div>
           <p>
@@ -193,14 +247,6 @@
       </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
-             const swiper = new Swiper('.swiper', {
-        effect: 'coverflow',
-        coverflowEffect: {
-          rotate: 30,
-          slideShadows: false,
-        },
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
