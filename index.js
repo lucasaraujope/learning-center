@@ -1,34 +1,44 @@
+const swiper = new Swiper('.swiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    initialSlide: 2,
+    speed: 600,
+    preventClicks: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+    },
+    on:{
+        click(event){
+            swiper.slideTo(this.clickedIndex);
+        },
+    }, 
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+});
+
+
+
 let valueDisplays = document.querySelectorAll(".alunos__number");
 let interval = 20000;
 
 valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function() {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if(startValue == endValue){
-            clearInterval(counter);
-        }
-    }, duration);
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
 });
 
-let videoAtual = document.querySelector('.layer-videos');
 
-let videoNovo = document.querySelectorAll('.videos__botoes');
-
-function trocar(){
-    document.getElementById("videos").scr = videoAtual;
-    let aux = videoAtual;
-    videoAtual = videoNovo;
-    videoNovo = aux;
-}
-    
-function changeVideo(embedUrl) {
-        document.getElementById("video").src = embedUrl;
-}
-
-function changeVideo2(embedUrl) {
-        document.getElementById("video2").src = embedUrl;
-}
